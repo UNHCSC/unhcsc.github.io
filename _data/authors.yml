@@ -1,0 +1,26 @@
+# This is the definition of athors for posts.
+# You need to specify "author: <name>" in the head of your markdown for this to be used
+
+Dan McCarthy:
+  name        : "Dan McCarthy"
+  bio         : "Cybersecurity Team Member"
+  avatar      : "/assets/images/dan.png"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:info@dmccarthy.org"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://dan.sbs"
+
+Cornelius Fiddlebone:
+  name        : "Cornelius Fiddlebone"
+  bio         : "I ordered what?"
+  avatar      : "/assets/images/bio-photo.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:cornelius@thewhip.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/rhymeswithsackit"
