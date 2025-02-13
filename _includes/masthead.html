@@ -18,14 +18,6 @@
                 <i class="fas fa-search"></i>
             </button>
             {% endif %}
-            <button class="greedy-nav__toggle hidden" type="button">
-                <span class="visually-hidden"
-                    >{{ site.data.ui-text[site.locale].menu_label | default:
-                    "Toggle menu" }}</span
-                >
-                <div class="navicon"></div>
-            </button>
-            <ul class="hidden-links hidden"></ul>
         </nav>
     </div>
     <nav class="masthead__nav">
@@ -56,5 +48,13 @@
             >
         </span>
         {%- endfor -%}
+        <button class="greedy-nav__toggle hidden" type="button">
+            <span class="visually-hidden"
+                >{{ site.data.ui-text[site.locale].menu_label | default:
+                "Togglemenu" }}</span
+            >
+            <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
     </nav>
 </div>

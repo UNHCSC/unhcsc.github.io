@@ -6,8 +6,6 @@
   @include clearfix;
   margin-inline: auto;
   padding-inline: 1em;
-  -webkit-animation: $intro-transition;
-  animation: $intro-transition;
   max-width: 100%;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
@@ -176,8 +174,6 @@ body {
   position: relative;
   margin-bottom: 2em;
   @include clearfix;
-  -webkit-animation: $intro-transition;
-  animation: $intro-transition;
   -webkit-animation-delay: 0.25s;
   animation-delay: 0.25s;
 
@@ -189,8 +185,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-animation: $intro-transition;
-    animation: $intro-transition;
     -webkit-animation-delay: 0.25s;
     animation-delay: 0.25s;
 

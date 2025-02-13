@@ -8,9 +8,7 @@
   margin-inline: 0;
   width: 100%;
   margin-top: 3em;
-  color: $muted-text-color;
-  -webkit-animation: $intro-transition;
-  animation: $intro-transition;
+  color: $background-color;
   -webkit-animation-delay: 0.45s;
   animation-delay: 0.45s;
   background-color: $footer-background-color;
@@ -40,7 +38,7 @@
   .fab,
   .far,
   .fal {
-    color: $muted-text-color;
+    color: $background-color;
   }
 }
 
@@ -78,6 +76,13 @@
   .social-icons {
     a {
       white-space: nowrap;
+      padding: 0 !important;
+    }
+
+    i {
+        color: $background-color;
+        width: 28px;
+        height: 28px;
     }
   }
 }
