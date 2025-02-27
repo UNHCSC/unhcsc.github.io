@@ -1,9 +1,17 @@
 # UNH Cybersecurity Website
 
-This is the primary website for the UNH Cybersecurity Clube. Below are details on how to setup and edit the website.
+This is the primary website for the UNH Cybersecurity Club. Below are details on how to setup and edit the website.
 
 ## Prerequisites
 
+- [Git](https://git-scm.com/) - Version control system
+    - Linux: 
+        - ```sudo apt install git```
+        - ```sudo yum install git```
+        - ```sudo dnf install git```12
+    - Windows:
+        - I recommend [Git Bash](https://git-scm.com/downloads/win)
+        - You can also use normal WSL, and just install git
 - [Ruby](https://www.ruby-lang.org/en/) - Used to run Jekyll site
     - I Recommend using [RVM](https://rvm.io/) to install Ruby
 - [Jekyll](https://jekyllrb.com/) - Self-explanatory
@@ -20,3 +28,7 @@ This is the primary website for the UNH Cybersecurity Clube. Below are details o
     bundle exec jekyll serve
     ```
     This should run the project at *localhost:4000*
+
+## Project Structure
+
+

@@ -1,131 +1,20 @@
-/* ==========================================================================
-   SIDEBAR
-   ========================================================================== */
-
-/*
-   Default
-   ========================================================================== */
-
-.sidebar {
-  @include clearfix();
-  // @include breakpoint(max-width $large) {
-  //   /* fix z-index order of follow links */
-  //   position: relative;
-  //   z-index: 10;
-  //   -webkit-transform: translate3d(0, 0, 0);
-  //   transform: translate3d(0, 0, 0);
-  // }
-
-  @include breakpoint($large) {
-    float: inline-start;
-    width: calc(#{$right-sidebar-width-narrow} - 1em);
-    opacity: 0.75;
-    -webkit-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
-
-    &:hover {
-      opacity: 1;
-    }
-
-    &.sticky {
-      overflow-y: auto;
-      /* calculate height of nav list
-         viewport height - nav height - masthead x-padding
-      */
-      max-height: calc(100vh - #{$nav-height} - 2em);
-    }
-  }
-
-  @include breakpoint($x-large) {
-    width: calc(#{$right-sidebar-width} - 1em);
-  }
-
-  > * {
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-bottom: 0;
-    font-family: $sans-serif-narrow;
-  }
-
-  p,
-  li {
-    font-family: $sans-serif;
-    font-size: $type-size-6;
-    line-height: 1.5;
-  }
-
-  img {
-    width: 100%;
-
-    &.emoji {
-      width: 20px;
-      height: 20px;
-    }
-  }
-}
-
-.sidebar__right {
-  margin-bottom: 1em;
-
-  @include breakpoint($large) {
-    position: absolute;
-    top: 0;
-    inset-inline-end: 0;
-    width: $right-sidebar-width-narrow;
-    margin-inline-end: -1 * $right-sidebar-width-narrow;
-    padding-inline-start: 1em;
-    z-index: 10;
-
-    &.sticky {
-      @include clearfix();
-      position: -webkit-sticky;
-      position: sticky;
-      top: 2em;
-      float: inline-end;
-
-      .toc {
-        .toc__menu {
-          overflow-y: auto;
-          max-height: calc(100vh - 7em);
-        }
-      }
-    }
-  }
-
-  @include breakpoint($x-large) {
-    width: $right-sidebar-width;
-    margin-inline-end: -1 * $right-sidebar-width;
-  }
-}
-
-.splash .sidebar__right {
-  @include breakpoint($large) {
-    position: relative;
-    float: inline-end;
-    margin-inline-end: 0;
-  }
-
-  @include breakpoint($x-large) {
-    margin-inline-end: 0;
-  }
-}
-
 /*
    Author profile and links
    ========================================================================== */
+.author_container {
+    display: flex;
+    align-items: center;
+
+    @include breakpoint($large) {
+        justify-content: center;
+    }
+
+    margin-bottom: 1.3rem;
+}
 
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  width: 36px;
-  height: 36px;
 
   @include breakpoint($large) {
     display: block;
@@ -134,7 +23,7 @@
   }
 
   img {
-    max-width: 110px;
+    max-width: 100px;
     border-radius: 50%;
 
     @include breakpoint($large) {
@@ -153,7 +42,6 @@
   @include breakpoint($large) {
     display: block;
     width: 100%;
-    padding-inline: 0;
   }
 
   a {

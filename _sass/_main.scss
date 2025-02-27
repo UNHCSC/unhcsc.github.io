@@ -1,0 +1,37 @@
+/* Copyright comment */
+@import "core/copyright";
+
+/* Variables */
+@import "core/variables";
+
+/* Mixins and functions */
+@import "core/vendor/breakpoint/breakpoint";
+@include breakpoint-set("to ems", true);
+@import "core/vendor/magnific-popup/magnific-popup"; // Magnific Popup
+@import "core/vendor/susy/susy";
+@import "core/mixins";
+
+/* Core CSS */
+@import "core/reset";
+@import "core/base";
+@import "core/forms";
+@import "core/tables";
+@import "core/animations";
+
+/* Components */
+@import "core/buttons";
+@import "core/notices";
+@import "core/masthead";
+@import "core/navigation";
+@import "core/footer";
+@import "core/search";
+@import "core/syntax";
+
+/* Utility classes */
+@import "core/utilities";
+
+/* Layout specific */
+@import "core/page";
+@import "core/archive";
+@import "core/author";
+@import "core/print";
