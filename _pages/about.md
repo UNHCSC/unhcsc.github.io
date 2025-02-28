@@ -1,37 +1,35 @@
 ---
-layout: single
+layout: page
 title: "About Us"
-permalink: /about
+permalink: /about/
 ---
 
 # About the UNH Cybersecurity Club
 
-The **University of New Hampshire Cybersecurity Club** is committed to providing students with a deep understanding of cybersecurity through practical experience, technical challenges, and professional development. Our members range from novices to experienced professionals, all working together to tackle complex problems and build expertise in the field of cybersecurity.
+The **University of New Hampshire Cybersecurity Club** is a student-driven organization focused on providing hands-on experience in the rapidly growing field of cybersecurity. Our club is divided into two main groups: the **General Club** and the **Competition Team**. Whether you are interested in learning the fundamentals or competing at the highest level, we offer opportunities for everyone to grow their skills and pursue their cybersecurity goals.
 
 ## Our Mission  
-We strive to:
-- Provide hands-on learning opportunities through a variety of tools, environments, and challenges.
-- Foster a collaborative and inclusive community of students interested in cybersecurity.
-- Compete in national and regional competitions, particularly the **Northeast Collegiate Cyber Defense Competition (NECCDC)**, to demonstrate our skills and represent UNH at the highest level.
-- Prepare students for careers in cybersecurity by providing access to workshops, guest speakers, and professional networking opportunities.
+Our mission is to:
+- Provide practical, hands-on experience through a combination of virtual and bare-metal resources for cybersecurity projects.
+- Develop and maintain a collaborative environment that encourages learning, innovation, and problem-solving.
+- Compete in cybersecurity competitions, including the prestigious **Northeast Collegiate Cyber Defense Competition (NECCDC)**.
+- Equip students with the technical skills and professional development needed to succeed in the cybersecurity industry.
 
 ## Our Infrastructure  
-We offer a comprehensive cybersecurity environment, supported by a **Proxmox-based cluster**, running Windows and Linux-based systems. Our lab includes critical enterprise technologies such as **Active Directory**, **network simulations**, and other tools used in real-world security operations. This infrastructure enables our members to develop practical skills in:
-- **System Administration**
-- **Network Defense**
-- **Incident Response**
-- **Adversarial Attacks**
-  
-By utilizing these technologies, we create a dynamic learning environment where students can experiment, practice, and grow in their cybersecurity skills.
+Our club boasts a comprehensive **cybersecurity lab**, comprised mainly of **Dell servers** and **Mikrotik switches** to support both virtual and bare-metal environments. These resources are used for a wide variety of cybersecurity tasks, including network simulations, vulnerability testing, and security research. The infrastructure provides students with the tools to engage in real-world scenarios and develop the technical skills needed to tackle modern cybersecurity challenges.
+
+In addition to our standard lab setup, we are developing an **in-house King of the Hill environment**, integrated with **Proxmox**, that simulates a competitive, real-world network defense scenario. This dynamic environment will serve as both a training ground for our competition team and a resource for general club members interested in sharpening their practical cybersecurity skills.
+
+## Our Groups  
+- **General Club**: Open to all students, this group focuses on hands-on learning, workshops, and networking. We provide access to our lab resources and host regular training sessions on various cybersecurity topics.
+- **Competition Team**: This is a specialized group of students who train and compete in national and regional cybersecurity competitions. The team participates in events such as the **NECCDC** and **Capture the Flag (CTF)** competitions, which test members' abilities to defend and attack real-world networks.
 
 ## Competitions & Events  
-We actively participate in high-stakes cybersecurity competitions, with a focus on the **NECCDC** (Northeast Collegiate Cyber Defense Competition), which tests our skills in real-time, competitive environments. These events provide our members with invaluable hands-on experience in defending complex networks while learning to work under pressure.  
-
-In addition to competitions, we host various workshops, training sessions, and talks from industry experts and alumni. These events are designed to help students build skills, expand their knowledge, and prepare for careers in the cybersecurity field.
+We actively participate in high-stakes cybersecurity competitions, especially the **NECCDC**. These events provide an opportunity for our competition team to demonstrate their skills under pressure in a simulated real-world environment. Members also have access to various workshops, talks, and networking events to help build technical skills and connect with industry professionals.
 
 ## Join Us  
-We are always looking for passionate students to join us. Whether you’re interested in cybersecurity as a career or simply want to explore this rapidly growing field, the **UNH Cybersecurity Club** offers an inclusive, hands-on community to help you reach your goals.
+Whether you're a beginner or a seasoned cybersecurity enthusiast, the **UNH Cybersecurity Club** offers something for everyone. Our community is driven by collaboration, learning, and mutual support. If you're looking to get hands-on experience, work with cutting-edge technologies, or compete in national events, we welcome you to join us.
 
-Ready to become part of the club? [Join our Discord](https://discord.gg/7TUV6aZV) or contact us for more information on upcoming events.
+**Ready to get involved?** [Join our Discord](https://discord.gg/7TUV6aZV) or contact us for more information about our upcoming events and opportunities.
 
-Together, we can stay ahead of the curve, tackle the latest cybersecurity threats, and prepare for success in this exciting industry.
+Together, we can stay ahead of the curve, tackle cybersecurity challenges, and prepare for success in this exciting field.
