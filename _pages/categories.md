@@ -1,7 +1,7 @@
 ---
 layout: categories
 title: Categories
-except: "joe biden"
+except: "null category"
 permalink: /categories
 categories: test
 ---
