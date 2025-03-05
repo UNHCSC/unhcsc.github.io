@@ -2,5 +2,7 @@
 main:
   - title: "About"
     url: /about
+  - title: "Info & Events"
+    url: /info-events
   - title: "Posts"
     url: /posts
