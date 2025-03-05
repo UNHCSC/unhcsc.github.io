@@ -19,6 +19,8 @@ The **University of New Hampshire Cybersecurity Club** is a premier student orga
 - **Networking & Career Opportunities** – Engage with professionals, industry leaders, and fellow students.
 
 ### Ready to get involved?  
-🚀 Join our community on **[Discord](https://discord.gg/7TUV6aZV)** to stay updated on events and opportunities.
+Join our community on **[Discord](https://discord.gg/7TUV6aZV)** to stay updated on events and opportunities.
+
+To officially join the club and partake in activities, join our organization on **[Catalyst (Presence.io)](https://unh.presence.io/organization/cybersecurity-club)**.
 
 Stay ahead of the curve, develop new skills, and make lasting connections in the cybersecurity field.
