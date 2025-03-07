@@ -45,7 +45,7 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build  --baseurl "cyber.cs.unh.edu"
+        run: bundle exec jekyll build  --baseurl "/"
         env:
           JEKYLL_ENV: production
           PAGES_REPO_NWO: "unhcsc/unhcsc.github.io"
@@ -60,4 +60,4 @@ jobs:
     steps:
       - name: Push to public directory
         id: publish
-        run: touch /data/actions-runner/test.txt
+        run: cp -r _site/* /var/www/html
