@@ -28,6 +28,6 @@ We actively participate in high-stakes cybersecurity competitions, especially th
 ## Join Us  
 Whether you're a beginner or a seasoned cybersecurity enthusiast, the **UNH Cybersecurity Club** offers something for everyone. Our community is driven by collaboration, learning, and mutual support. If you're looking to get hands-on experience, work with cutting-edge technologies, or compete in national events, we welcome you to join us.
 
-**Ready to get involved?** [Join our Discord](https://discord.gg/7TUV6aZV) or contact us through **[Catalyst (Presence.io)](https://unh.presence.io/organization/cybersecurity-club)** for more information about our upcoming events and opportunities.
+**Ready to get involved?** [Join our Discord](https://discord.gg/h38HDWKTZ2) or contact us through **[Catalyst (Presence.io)](https://unh.presence.io/organization/cybersecurity-club)** for more information about our upcoming events and opportunities.
 
 Together, we can stay ahead of the curve, tackle cybersecurity challenges, and prepare for success in this exciting field.
