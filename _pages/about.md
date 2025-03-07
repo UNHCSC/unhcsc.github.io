@@ -1,10 +1,8 @@
 ---
 layout: single
 title: "About Us"
-permalink: /about/
+permalink: /about
 ---
-
-# About the UNH Cybersecurity Club
 
 The **University of New Hampshire Cybersecurity Club** is a student-driven organization focused on providing hands-on experience in the rapidly growing field of cybersecurity. Our club is divided into two main groups: the **General Club** and the **Competition Team**. Whether you are interested in learning the fundamentals or competing at the highest level, we offer opportunities for everyone to grow their skills and pursue their cybersecurity goals.
 
