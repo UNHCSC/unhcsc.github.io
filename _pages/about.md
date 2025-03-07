@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "About Us"
+description: "Learn more about the UNH Cybersecurity Club and our mission, infrastructure, groups, competitions, and events."
 permalink: /about
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: splash
 title: "UNH Cybersecurity Club"
+description: "The University of New Hampshire Cybersecurity Club is a premier student organization focused on cybersecurity education, hands-on learning, and competitive excellence."
 permalink: /
 header:
     overlay_color: "#000000"

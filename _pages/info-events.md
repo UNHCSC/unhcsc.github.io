@@ -1,10 +1,11 @@
 ---
 layout: single
 title: "Information & Events"
+description: "Stay up to date with the latest events and meeting times of the Cybersecurity Club at UNH"
 permalink: /info-events/
 ---
 
-The cybersecurity club holds events and meeting throughout the school year. Below you can find our regular meeting schedule along with upcoming events we're holding. Check back later to stay updated on future events!
+The cybersecurity club holds events and meetings throughout the school year. Below you can find our regular meeting schedule along with upcoming events we're holding. Check back later to stay updated on future events!
 
 ## Meeting Times & Locations
 
