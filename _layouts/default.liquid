@@ -1,6 +1,7 @@
 ---
 ---
 
+<!-- This is the base layout used by most themes on this site -->
 <!doctype html>
 <html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
   <head>
@@ -13,8 +14,8 @@
     {% include_cached masthead.html %}
 
     <div class="initial-content">
-        {{ content }}
-        {% include after-content.html %}
+      {{ content }}
+      {% include after-content.html %}
     </div>
 
     {% if site.search == true %}
@@ -31,6 +32,5 @@
     </div>
 
     {% include scripts.html %}
-    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> -->
   </body>
 </html>

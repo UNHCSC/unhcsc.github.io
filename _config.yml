@@ -1,16 +1,13 @@
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
+# This is main config file for our project
+# Most of this stuff is set as it should
+# Only mess with this if you know what your doing lol
 
-# Site Settings
 locale: "en-US"
 rtl: # true, false (default) # turns direction of the page into right to left for RTL languages
 title: "UNH Cybersecurity"
 title_separator: "|"
 masthead_title: "UNH"
 subtitle: "Cybersecurity"
-name: ""
 description: ""
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
