@@ -27,7 +27,7 @@ In addition to our standard lab setup, we are developing an **in-house King of t
 We actively participate in high-stakes cybersecurity competitions, especially the **NECCDC**. These events provide an opportunity for our competition team to demonstrate their skills under pressure in a simulated real-world environment. Members also have access to various workshops, talks, and networking events to help build technical skills and connect with industry professionals.
 
 ## Join Us  
-Whether you're a beginner or a seasoned cybersecurity enthusiast, the **UNH Cybersecurity Club** offers something for everyone. Our community is driven by collaboration, learning, and mutual support. If you're looking to get hands-on experience, work with cutting-edge technologies, or compete in national events, we welcome you to join us.
+Whether you're a beginner or a seasoned cybersecurity enthusiast, the **UNH Cybersecurity Club** offers something for everyone. Our community is driven by collaboration, learning, and mutual support. If you're looking to get hands-on experience, work with cutting-edge technologies, or compete in national events, we welcome you to join us. You can also follow us on Instagram @cscunh!
 
 **Ready to get involved?** [Join our Discord](https://discord.gg/y9sEUKM5xB) or contact us through **[Catalyst (Presence.io)](https://unh.presence.io/organization/cybersecurity-club)** for more information about our upcoming events and opportunities.
 
