@@ -69,11 +69,16 @@
 
         a {
             color: #003591;
+            text-decoration: none;
         }
     }
     
     a {
         color: #555555;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
   }
 }

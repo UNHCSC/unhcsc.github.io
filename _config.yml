@@ -9,7 +9,7 @@ title_separator: "|"
 masthead_title: "UNH"
 subtitle: "Cybersecurity"
 description: ""
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: ""
 baseurl: # the subpath of your site, e.g. "/blog"
 teaser: "/assets/images/header.png"
 logo: "/assets/images/logo.svg"
@@ -79,21 +79,21 @@ author:
   bio: "University of New Hampshire Cybersecurity Club"
   email:
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   # url: "mailto:your.name@email.com"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   # url: "https://your-website.com"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   # url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/UNHCSC"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://www.instagram.com/cscunh/"
 
 # Site Footer
 footer:
@@ -107,6 +107,9 @@ footer:
     - label: "Discord"
       icon: "fab fa-fw fa-discord"
       url: "https://discord.gg/y9sEUKM5xB"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/cscunh/"
 
 
 # Reading Files
