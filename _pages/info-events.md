@@ -10,7 +10,7 @@ The cybersecurity club holds events and meetings throughout the school year. Bel
 ## Meeting Times & Locations
 
 - **General Meetings**: Every Tuesday at 6:30 PM in **Kingsbury S145**
-- **Team Meetings**: Every Thursday at 6:30 PM in **Kingsbury N101**
+- **Team Meetings**: Every Thursday at 6:30 PM in **Kingsbury N203**
 
 ## Upcoming Events
 
