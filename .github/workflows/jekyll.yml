@@ -60,4 +60,7 @@ jobs:
     steps:
       - name: Push to public directory
         id: publish
-        run: cp -r _site/* /var/www/html
+        run: cp -r _site/* /var/www/clubsite/current
+      # - name: Reload Nginx
+      #   id: reload
+      #   run: sudo systemctl reload nginx
