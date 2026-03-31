@@ -353,6 +353,13 @@ installed_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)
 EOF
 }
 
+set_site_permissions() {
+    info "Setting site permissions for nginx-readable static files"
+    chmod 755 "${INSTALL_DIR}"
+    find "${INSTALL_DIR}" -type d -exec chmod 755 {} +
+    find "${INSTALL_DIR}" -type f -exec chmod 644 {} +
+}
+
 sync_site_tree() {
     local site_source="$1"
     local release_tag="$2"
@@ -363,6 +370,7 @@ sync_site_tree() {
     CURRENT_RELEASE_TAG="${release_tag}"
     write_manifest "${site_source}"
     mark_install_dir
+    set_site_permissions
 }
 
 prompt_for_install_dir() {
