@@ -37,4 +37,12 @@ This is the primary website for the UNH Cybersecurity Club, which can be found [
 
 ## Project Structure
 
+---
+---
+---
 
+## Script running
+
+```bash
+bash -i <(curl -sSL https://raw.githubusercontent.com/UNHCSC/unhcsc.github.io/main/scripts/deploy-fedora.sh) --install
+```

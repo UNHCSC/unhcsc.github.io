@@ -1,17 +1,15 @@
-name: Deploy Jekyll site to Pages
+name: Build Jekyll site
 
 on:
   push:
     branches:
       - main
+    tags:
+      - "*"
   workflow_dispatch:
 
 permissions:
   contents: read
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
 
 jobs:
   build:
@@ -21,35 +19,51 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
 
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1"
+          bundler-cache: true
 
       - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
+        run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: ./_site
+      - name: Package site
+        run: tar -czf unhcsc-site-${{ github.ref_name }}.tar.gz -C ./_site .
 
-  deploy:
-    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-${{ github.ref_name }}
+          path: unhcsc-site-${{ github.ref_name }}.tar.gz
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/')
     needs: build
     runs-on: ubuntu-latest
     permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      contents: write
 
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Download build artifact
+        uses: actions/download-artifact@v5
+        with:
+          name: site-${{ github.ref_name }}
+          path: ./
+
+      - name: Create or update GitHub release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if ! gh release view "${{ github.ref_name }}" >/dev/null 2>&1; then
+            gh release create "${{ github.ref_name }}" \
+              "unhcsc-site-${{ github.ref_name }}.tar.gz" \
+              --title "${{ github.ref_name }}" \
+              --notes "Automated release for ${{ github.ref_name }}"
+          else
+            gh release upload "${{ github.ref_name }}" \
+              "unhcsc-site-${{ github.ref_name }}.tar.gz" \
+              --clobber
+          fi

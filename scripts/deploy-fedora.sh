@@ -136,6 +136,15 @@ github_api_get() {
         "${url}"
 }
 
+github_api_get_with_status() {
+    local url="$1"
+    curl -sSL \
+        -H "Accept: application/vnd.github+json" \
+        -H "X-GitHub-Api-Version: 2022-11-28" \
+        -w $'\n%{http_code}' \
+        "${url}"
+}
+
 list_releases() {
     ensure_release_tools
     github_api_get "${GITHUB_API_BASE}/releases" \
@@ -144,10 +153,47 @@ list_releases() {
 }
 
 get_release_json() {
+    local response=""
+    local status=""
+    local body=""
+    local repo_json=""
+    local default_branch=""
+    local branch_json=""
+    local commit_sha=""
+
     if [[ -n "${REQUESTED_TAG}" ]]; then
         github_api_get "${GITHUB_API_BASE}/releases/tags/${REQUESTED_TAG}"
     else
-        github_api_get "${GITHUB_API_BASE}/releases/latest"
+        response="$(github_api_get_with_status "${GITHUB_API_BASE}/releases/latest")"
+        status="${response##*$'\n'}"
+        body="${response%$'\n'*}"
+
+        if [[ "${status}" == "200" ]]; then
+            printf '%s\n' "${body}"
+            return
+        fi
+
+        if [[ "${status}" != "404" ]]; then
+            die "GitHub API request for the latest release failed with HTTP ${status}."
+        fi
+
+        repo_json="$(github_api_get "${GITHUB_API_BASE}")"
+        default_branch="$(jq -r '.default_branch' <<<"${repo_json}")"
+        [[ -n "${default_branch}" && "${default_branch}" != "null" ]] || die "Could not determine the repository default branch."
+
+        branch_json="$(github_api_get "${GITHUB_API_BASE}/branches/${default_branch}")"
+        commit_sha="$(jq -r '.commit.sha' <<<"${branch_json}")"
+        [[ -n "${commit_sha}" && "${commit_sha}" != "null" ]] || die "Could not determine the latest commit for branch '${default_branch}'."
+
+        info "No published GitHub release found; using the '${default_branch}' branch archive instead"
+        jq -n \
+            --arg tag_name "${default_branch}@${commit_sha:0:7}" \
+            --arg tarball_url "${GITHUB_API_BASE}/tarball/${default_branch}" \
+            '{
+                tag_name: $tag_name,
+                tarball_url: $tarball_url,
+                assets: []
+            }'
     fi
 }
 
